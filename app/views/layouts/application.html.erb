@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beschloo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+	<nav class="navbar navbar-light" style="background-color: #ffffff;">
+	<a class="navbar-brand" href="#">Natives</a>
+		
+<form class="form-inline pull-xs-left">
+			<input class="form-control" type="What are you searching for?" placeholder="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+
+		<ul class="nav navbar-nav pull-xs-right">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Join</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Sign In</a>
+			</li>
+			<li class="nav-item">
+				<a class="btn btn-success" href="#">List Your Service</a>
+			</li>
+		</ul>
+
+
+	
+	</nav>
+<%= yield :header if content_for? :header %>
+</header>
+
+<div class="container">
+	<%= yield %>
+</div>
+
+
+<footer>
+<nav class="nav nav-inline">
+  <a class="nav-link active" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" href="#">Disabled</a>
+</nav>
+</footer>
+</body>
+</html>

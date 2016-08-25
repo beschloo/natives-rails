@@ -1,0 +1,133 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.jumbotron-fluid {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	margin-bottom: 0;
+}
+
+.hero {
+	width: 100%;
+	height: 430px;
+	background-image:  url('Natives-Banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+h1 {
+		font-size: 48pt;
+		color: white;
+		text-align: center;
+		line-height: 56px;
+		// margin-top: 88px;
+	}
+
+	h2 {
+			padding-top: 6rem;
+			padding-bottom: 6rem;
+			margin-bottom: 0;
+			color: white;
+			font-size: 26px;
+
+		}
+
+	.dark {
+		margin-top: 88px;
+		font-size: 24pt;
+		color: #5a5a5a;
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: 24pt;
+		color: white;
+		font-weight: regular;
+		line-height: 29px;
+		text-align: center;
+		// margin-bottom: 48px;
+
+	}
+
+	h4 {
+		margin-bottom: 26px;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		color: #5a5a5a;
+	}
+
+// .boob {
+// 	margin-top: 50px;
+// }	
+.center {
+	text-align: center;
+
+}
+.services {
+	// margin-top: 30px;
+}
+.top-spacer {
+	margin-top: $grid-gutter-width;
+}
+.listing {
+	margin-top: 30px;
+}
+
+
+.listing-title {
+	padding-top: 16px;
+	text-align: left;
+	font-size: 19px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #5a5a5a;
+}
+
+.listing-user {
+	text-align: left;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #898989;
+}
+
+.heart-icon {
+		float: right;
+    margin-top: 80px;
+    margin-right: 20px;
+ }
+
+
+
+.listing-image {
+	height: 245px;
+	background-image: linear-gradient(-180deg, #8C76FF 0%, #3FCFFF 100%);
+}
+
+
+	.item {
+		height: 233px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+
+.nav-inline {
+		text-align: center;
+		margin-top: 20px;	
+		margin-bottom: 20;
+}
+
+
+
+// .card {
+// 	text-align: center;
+// 	padding-top: 20px;
+// 	padding-right: 20px;
+// 	background-image: url('grid-image-hypnosis.jpg');
+// }

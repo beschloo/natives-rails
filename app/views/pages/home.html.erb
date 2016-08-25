@@ -1,0 +1,117 @@
+
+<%= content_for :header do %>
+<div class="jumbotron-fluid hero">
+	<div class="container-fluid">
+
+
+		<div class="row flex-items-xs-top">       <div class="col-xs">&nbsp;</div>
+		<div class="col-xs-9 col-md-6  col-lg-5 boob">         <h1>           Find
+			Holistic Healing Near You.         </h1>         <h3>           Your holistic
+			hub of ancient wisdoms and natural remedies.         </h3>         <div class
+			="input-group">           <input type="text" class="form-control"
+			placeholder="What service are you searching for?">           <span class
+			="input-group-btn">             <button class="btn btn-secondary"
+			type="button">Search Now</button>           </span>         </div>
+		</div>       <div class="col-xs">&nbsp;</div>     </div>
+
+	</div>
+</div>
+<% end %>
+
+<div class="row">
+	<div class="col-xs-12 center">
+		<h3 class="dark">
+		Discover Services Around You
+		</h3>
+
+		<h4>
+		Holistic Sub-Title Goes Here
+		</h4>		
+	</div>
+</div>
+
+<div class="row services ">
+	<div class="col-xs-6 col-md-4">
+		<div class="item" style="background-image: url('<%= asset_url('grid-image-meditation.png') %>')">
+			<h2>
+				Meditation
+			</h2>
+		</div>
+	</div>
+	<div class="col-xs-6 col-md-4">
+		<div class="item" style="background-image: url('<%= asset_url('grid-image-hypnosis.png') %>')">
+			<h2>
+				Hypnosis
+			</h2>
+		</div>
+	</div>
+	<div class="col-xs-6 col-md-4">
+		<div class="item" style="background-image: url('<%= asset_url('grid-image-palm-reading.png') %>')">
+			<h2>
+				Palm Reading
+			</h2>
+		</div>				
+	</div>
+</div>
+
+<div class="row services top-spacer">
+	<div class="col-xs-6 col-md-4">
+		<div class="item" style="background-image: url('<%= asset_url('grid-image-iridology.png') %>')">
+			<h2>
+				Iridology
+			</h2>
+		</div>
+	</div>
+	<div class="col-xs-6 col-md-4">
+		<div class="item" style="background-image: url('<%= asset_url('grid-image-yoga.png') %>')">
+			<h2>
+				Yoga
+			</h2>
+		</div>
+	</div>
+	<div class="col-xs-6 col-md-4">
+		<div class="item" style="background-image: url('<%= asset_url('grid-image-osteopathy.png') %>')">
+			<h2>
+				Osteopathy
+			</h2>
+		</div>				
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 center">
+		<h3 class="dark">
+			Holistic Sub-Title Goes Here
+		</h3>
+
+		<h4>
+			Holistic Sub-Title Goes Here
+		</h4>	
+	</div>
+</div>
+
+
+<div class="row listing">
+<% 12.times do |i| %>
+
+	<% if i % 4 == 0 %>
+	</div>
+	<div class="row listing">
+	<% end %>
+
+	<div class="col-xs-6 col-md-3">
+		<div class="listing-image">
+		</div>
+
+			<img class="heart-icon" src="assets/heart-icon.svg" alt="heart-icon">
+
+			<h4 class="listing-title">
+			Holistic Marketing Consultation
+			</h4>
+
+			<h5 class="listing-user">
+			Aimee Jean Greenacre
+			</h5>
+	</div>
+<% end %>
+</div>
