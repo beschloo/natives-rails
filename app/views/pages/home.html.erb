@@ -88,24 +88,19 @@
 
 		<h4>
 		Holistic Sub-Title Goes Here
-		</h4>		
+		</h4>
 	</div>
 </div>
 
 
 <div class="row listing">
-<% 12.times do |i| %>
+<% 16.times do |i| %>
 
-	<% if i % 4 == 0 %>
-	</div>
-	<div class="row listing">
-	<% end %>
-
-	<div class="col-xs-6 col-md-3">
+	<div class="col-xs-6 col-sm-4 col-lg-3 top-spacer thumbmail">
 		<div class="listing-image">
 		</div>
-
-			<img class="heart-icon" src="<%= asset_url('heart-icon.svg')%>" alt="heart-icon">
+		<div class="caption">
+			<img class="heart-icon pull-right" src="<%= asset_url('heart-icon.svg')%>" alt="heart-icon">
 
 			<h4 class="listing-title">
 			Holistic Marketing Consultation
@@ -114,6 +109,7 @@
 			<h5 class="listing-user">
 			Aimee Jean Greenacre
 			</h5>
+		</div>
 	</div>
 <% end %>
 </div>
