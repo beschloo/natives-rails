@@ -5,7 +5,7 @@
 
 
 		<div class="row flex-items-xs-top">       <div class="col-xs">&nbsp;</div>
-		<div class="col-xs-9 col-md-6  col-lg-5 boob">         <h1>           Find
+		<div class="col-xs-9 col-md-6  col-lg-6 boob">         <h1>           Find
 			Holistic Healing Near You.         </h1>         <h3>           Your holistic
 			hub of ancient wisdoms and natural remedies.         </h3>         <div class
 			="input-group">           <input type="text" class="form-control"
@@ -30,13 +30,17 @@
 	</div>
 </div>
 
-
 <div class="row services ">
+
 	<div class="col-xs-6 col-md-4">
+
 		<div class="item" style="background-image: url('<%= asset_url('grid-image-meditation.png') %>')">
+			<%= link_to listings_path(filter:'Meditation') do %>
 			<h2>
 				Meditation
 			</h2>
+			<% end %>
+
 		</div>
 	</div>
 	<div class="col-xs-6 col-md-4">
@@ -102,6 +106,7 @@
 	<% end %>
 
 	<div class="col-xs-6 col-md-3">
+		<%= link_to listing_path(id: i) do %>
 		<div class="listing-image">
 		</div>
 
@@ -114,6 +119,8 @@
 			<h5 class="listing-user">
 			Aimee Jean Greenacre
 			</h5>
+
+		<% end %>
 	</div>
 <% end %>
 </div>
